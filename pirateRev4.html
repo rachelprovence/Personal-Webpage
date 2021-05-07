@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+	<head> 
+		<title> Rachel Provence 2 Pirate Webpage </title>
+		<script type="text/javascript">
+			function ClearText()
+				{
+				document.getElementById('outputDiv').innerHTML = "";
+				}
+		</script>
+	<head>
+	
+	<body> 
+		<img src="../PirateProject/pimage1.png" alt="Pirate Image 1" height=300 width=300
+			onmouseover="this.src='../PirateProject/pimage2.png';"
+			onmouseout="this.src='../PirateProject/pimage1.png';" >
+	<h3> Land Lubber's Pirate Translator </h3>
+	<p>
+		Simply click on the buttons to translate English words or phrases to pirate talk
+	</p>
+		<table>
+			<tr> 
+				<td> Greetings:  </td>
+				<td> <input type="button" value="hello"
+							onclick="document.getElementById('outputDiv').innerHTML=
+								document.getElementById('outputDiv').innerHTML + 'ahoy ';"> </td>
+				<td> <input type="button" value="pardon me"
+							onclick="document.getElementById('outputDiv').innerHTML=
+								document.getElementById('outputDiv').innerHTML + 'avast ';"> </td>
+				<td> <input type="button" value="excuse me"
+							onclick="document.getElementById('outputDiv').innerHTML=
+								document.getElementById('outputDiv').innerHTML + 'arrr ';"> </td>
+			</tr>
+			<tr>
+				<td> People:  </td>
+				<td> <input type="button" value="sir" 
+							onclick="document.getElementById('outputDiv').innerHTML=
+								document.getElementById('outputDiv').innerHTML + 'matey ';"> </td>
+				<td> <input type="button" value="madam"
+							onclick="document.getElementById('outputDiv').innerHTML=
+								document.getElementById('outputDiv').innerHTML + 'proud beauty ';"> </td>
+				<td> <input type="button" value="stranger"
+							onclick="document.getElementById('outputDiv').innerHTML=
+								document.getElementById('outputDiv').innerHTML + 'scurvy dog ';"> </td>
+				<td> <input type="button" value="officer"
+							onclick="document.getElementById('outputDiv').innerHTML=
+								document.getElementById('outputDiv').innerHTML + 'foul blaggart ';"> </td>
+			</tr>
+			<tr>
+				<td> Questions:  </td>
+				<td> <input type="button" value="where is"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'whar be ';"> </td>
+				<td> <input type="button" value="can you help me find"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'know ye ';"> </td>
+				<td> <input type="button" value="how far is it to"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'how many leagues to ';"> </td>
+				<td> <input type="button" value="is that"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'be that ';"> </td>
+			</tr>
+			<tr> 
+				<td> Articles:  </td>
+				<td> <input type="button" value="the"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'th\'\ ';"> </td>
+				<td> <input type="button" value="nearby"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'broadside ';"> </td>
+				<td> <input type="button" value="my"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'me ';"> </td>
+				<td> <input type="button" value="your"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'yer ';"> </td>
+			</tr>
+			<tr>
+				<td> Places:  </td>
+				<td> <input type="button" value="restroom"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'head ';"> </td>
+				<td> <input type="button" value="restaurant"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'galley ';"> </td>
+				<td> <input type="button" value="hotel"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'fleabag inn ';"> </td>
+				<td> <input type="button" value="bank"
+						onclick="document.getElementById('outputDiv').innerHTML=
+							document.getElementById('outputDiv').innerHTML + 'buried treasure ';"> </td>
+			</tr>
+		</table>
+	<br> 
+		<input type="button" value="Clear Translation"
+				onclick="ClearText()">
+		<input type="button" value="New Line"
+				onclick="document.getElementById('outputDiv').innerHTML=
+					document.getElementById('outputDiv').innerHTML + '<br>';">
+	<br> <hr>
+		<div id="outputDiv"> </div> 
+	</body>
+	
+</html>
